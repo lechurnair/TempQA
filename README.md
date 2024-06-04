@@ -4,10 +4,10 @@ These codes are used for create TComQA dataset. We have used contexts from SAMsu
 
 ## Folders
 - Datasets:
-  - TComQA_dataset_sample. : A sample of TComQA; the generated dataset
-  - mctaco_filtered_QA_train.json : MC-TACO data used for training the Question Answering model
-  - qaContext_RealNews.txt : The RealNews contexts that were used to generate the questions
-  - qaContext_samsum.txt : The SAMSum data that were used to generate the questions
+  - TComQA_dataset_sample.json : A sample of TComQA; the generated dataset
+  - mctaco_filtered_QA_train.json : MC-TACO data used for training the Question Answering model(directly loading from huggingface in the code)
+  - qaContext_RealNews.txt : The RealNews contexts that were used to generate the questions(this is named as filtered_sentences.txt in the code)
+  - qaContext_samsum.txt : The SAMSum data that were used to generate the questions(this data is directly loaded from huggingface instead of loading from this file)
   - train_df.tsv : MC-TACO data used to train Question generation model
 - Question Answering
   - Llama_2_TC.ipynb, Llama_2_TC_Train_McTACO+RealNews+SamSUM.ipynb, Llama_2_TC_Train_RealNews+SamSUM.ipynb : Training Llama using MC-TACO, (MC-TACO, RealNews and SAMSum) and (RealNews and SAMSum) respectively. The training code for Llama-2 model is from this [blog](https://deci.ai/blog/fine-tune-llama-2-with-lora-for-question-answering/)
