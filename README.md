@@ -10,6 +10,12 @@ These codes are used for create TComQA dataset. We have used contexts from SAMsu
   - qaContext_samsum.txt : The SAMSum data that were used to generate the questions
   - train_df.tsv : MC-TACO data used to train Question generation model
 - Question Answering
-  - Llama_2_TC.ipynb, Llama_2_TC_Train_McTACO+RealNews+SamSUM.ipynb, Llama_2_TC_Train_RealNews+SamSUM.ipynb : Training Llama using MC-TACO, (MC-TACO, RealNews and SAMSum) and (RealNews and SAMSum) respectively. The training code for Llama-2 model is from [this blog](https://deci.ai/blog/fine-tune-llama-2-with-lora-for-question-answering/)
+  - Llama_2_TC.ipynb, Llama_2_TC_Train_McTACO+RealNews+SamSUM.ipynb, Llama_2_TC_Train_RealNews+SamSUM.ipynb : Training Llama using MC-TACO, (MC-TACO, RealNews and SAMSum) and (RealNews and SAMSum) respectively. The training code for Llama-2 model is from this [blog](https://deci.ai/blog/fine-tune-llama-2-with-lora-for-question-answering/)
   - QA_BERT.ipynb : Training BERT on MC-TACO using MLM for answer generation
   - numBERT_for_MLM.ipynb : Training NumBERT on MC-TACO using MLM for answer generation
+  - similarity_scores.ipynb
+- Question Generation
+  - T5_Question_Generation.ipynb : Trained T5 model for question generation task. The code is from this [blog](https://towardsdatascience.com/asking-the-right-questions-training-a-t5-transformer-model-on-a-new-task-691ebba2d72c)
+  - T5_Question_Generation__Various_Datasets.ipynb : Using the saved finetuned T5 model, question generation is done on SAMSum
+- Validity Checker :
+- Miscellaneous :
