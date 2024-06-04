@@ -1,1 +1,2 @@
-# TempQA
+# These codes are used for create TComQA dataset. We have used contexts from SAMsum and RealNews dataset to create it. Context are first used with all five types of temporal dimention/properties, duration, frequency, typical time, stationary, and event ordering to generate questions. Later, generated question are validted by Lexical validator. Then the valid questions are passed to the Question-Answering model to generate the questions. 
+# We only use a small portion of contexts to create a total of 8L Question -Answer pairs, that are given in the Dataset folder. 
