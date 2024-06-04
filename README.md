@@ -9,3 +9,7 @@ These codes are used for create TComQA dataset. We have used contexts from SAMsu
   - qaContext_RealNews.txt : The RealNews contexts that were used to generate the questions
   - qaContext_samsum.txt : The SAMSum data that were used to generate the questions
   - train_df.tsv : MC-TACO data used to train Question generation model
+- Question Answering
+  - Llama_2_TC.ipynb, Llama_2_TC_Train_McTACO+RealNews+SamSUM.ipynb, Llama_2_TC_Train_RealNews+SamSUM.ipynb : Training Llama using MC-TACO, (MC-TACO, RealNews and SAMSum) and (RealNews and SAMSum) respectively. The training code for Llama-2 model is from [this blog](https://deci.ai/blog/fine-tune-llama-2-with-lora-for-question-answering/)
+  - QA_BERT.ipynb : Training BERT on MC-TACO using MLM for answer generation
+  - numBERT_for_MLM.ipynb : Training NumBERT on MC-TACO using MLM for answer generation
